@@ -1,0 +1,4 @@
+ds-test/=properties/lib/forge-std/lib/ds-test/src
+forge-std/=properties/lib/forge-std
+properties/=properties/contracts
+@openzeppelin/=properties/lib/openzeppelin-contracts

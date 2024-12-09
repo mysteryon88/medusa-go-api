@@ -1,6 +1,3 @@
-[submodule "vendor/propertie"]
-	path = vendor/propertie
-	url = https://github.com/crytic/properties.git
 [submodule "properties"]
 	path = properties
 	url = https://github.com/crytic/properties.git
