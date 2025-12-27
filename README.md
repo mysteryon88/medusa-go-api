@@ -6,6 +6,7 @@ Go API for [Medusa](https://github.com/crytic/medusa) - a fuzzing framework for 
 
 ```bash
 git clone --recursive https://github.com/mysteryon88/medusa-go-api.git
+go mod tidy
 cd medusa-go-api
 ```
 
