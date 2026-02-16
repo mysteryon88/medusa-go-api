@@ -2,6 +2,8 @@
 
 Go API for [Medusa](https://github.com/crytic/medusa) - a fuzzing framework for Ethereum smart contracts.
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/mysteryon88/medusa-go-api)
+
 ## Installation
 
 ```bash
