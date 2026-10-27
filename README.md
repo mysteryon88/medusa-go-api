@@ -8,7 +8,7 @@ Current versions: `github.com/crytic/medusa` **v1.5.1**, [crytic/properties](htt
 
 ## Features
 
-- reusable `internal/runner` package: parameters → Medusa configuration → bounded campaign → structured JSON report (schema v1);
+- reusable `runner` package: parameters → Medusa configuration → bounded campaign → structured JSON report (schema v1);
 - an isolated working directory for each run (`config.json`, `corpus/`, `logs/`, `crytic-export/`, `report.json`);
 - campaign limits (timeout / number of calls) and programmatic cancellation through `context.Context` (Stop → grace period → Terminate);
 - the run's technical status is separate from check results; unavailable metrics are `null`;
@@ -96,8 +96,8 @@ sent during deployment, so the constructor must be `payable`. The example target
 `fixtures/Funded.sol` (contract `Funded`). This field is available through the Go API; the CLI
 uses zero balances.
 
-`internal/runner` can be imported from Go code within this module.
-For a separate project, copy the example: Go does not allow importing `internal` from outside its parent module.
+The `runner` package is a public importable API:
+`import "github.com/mysteryon88/medusa-go-api/runner"`.
 
 ## Links
 

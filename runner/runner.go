@@ -377,9 +377,13 @@ func finalize(ctx context.Context, report *Report, params RunParams, retErr erro
 }
 
 func newReport(params *RunParams) *Report {
+	runID := params.RunID
+	if runID == "" {
+		runID = newRunID()
+	}
 	r := &Report{
 		SchemaVersion: SchemaVersion,
-		RunID:         newRunID(),
+		RunID:         runID,
 		Metrics: Metrics{
 			CallsTested:      nil,
 			SequencesTested:  nil,

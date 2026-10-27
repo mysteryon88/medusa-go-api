@@ -33,8 +33,8 @@ func repoPath(t *testing.T, parts ...string) string {
 	if !ok {
 		t.Fatal("runtime.Caller is unavailable")
 	}
-	// internal/runner/runner_integration_test.go -> repository root
-	root := filepath.Dir(filepath.Dir(filepath.Dir(thisFile)))
+	// runner/runner_integration_test.go -> repository root
+	root := filepath.Dir(filepath.Dir(thisFile))
 	// CWD = repository root: the target is compiled with a relative path without
 	// ".." (solc canonicalizes ".." to an absolute path, which breaks
 	// crytic-compile target parsing on Windows).

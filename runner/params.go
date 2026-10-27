@@ -49,6 +49,11 @@ type RunParams struct {
 	// WorkDir is the required run directory, where config.json, corpus/, logs/,
 	// crytic-export/, and report.json are created.
 	WorkDir string
+	// RunID is an optional external run identifier (for example, from the
+	// worker protocol). When set, it is used as Report.RunID unchanged; when
+	// empty, one is generated automatically. It lets the caller link
+	// report.run_id with the run directory name and an external task ID.
+	RunID string
 	// CorpusReuseDir is an optional existing corpus directory to reuse (instead
 	// of WorkDir/corpus).
 	CorpusReuseDir string

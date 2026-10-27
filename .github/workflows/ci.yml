@@ -38,14 +38,14 @@ jobs:
         run: go test -race -short -count=1 ./...
 
       - name: Integration tests (short campaigns)
-        run: go test -count=1 -timeout 900s ./internal/runner/
+        run: go test -count=1 -timeout 900s ./runner/
 
       # Separate and non-blocking: medusa v1.5.1 has a race in spawnWorkersLoop
       # (fuzzer.go:872-955, shared err/working without synchronization; upstream).
       # Our wrapper adds no races; this step is informational and non-blocking.
       - name: Integration tests (race, informational)
         continue-on-error: true
-        run: go test -race -count=1 -timeout 900s ./internal/runner/
+        run: go test -race -count=1 -timeout 900s ./runner/
 
       - name: CLI smoke (Adder, 20 c)
         run: |

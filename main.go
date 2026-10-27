@@ -18,7 +18,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/mysteryon88/medusa-go-api/internal/runner"
+	"github.com/mysteryon88/medusa-go-api/runner"
 )
 
 func main() {
