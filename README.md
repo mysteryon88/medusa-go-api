@@ -3,6 +3,7 @@
 An example of running limited [Medusa](https://github.com/crytic/medusa) fuzzing campaigns programmatically through its **Go API**.
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/mysteryon88/medusa-go-api)
+[![Go Reference](https://pkg.go.dev/badge/github.com/mysteryon88/medusa-go-api/runner.svg)](https://pkg.go.dev/github.com/mysteryon88/medusa-go-api/runner)
 
 Current versions: `github.com/crytic/medusa` **v1.5.1**, [crytic/properties](https://github.com/crytic/properties) submodule **v1.1.0** (`9b91ad9`).
 
