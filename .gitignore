@@ -1,4 +1,18 @@
-crytic-export
-corpus
-*.json
-go.sum
+# Executables
+*.exe
+
+# Wrapper run directories (campaign artifacts)
+workdir/
+
+# Compilation and analysis artifacts (when run from the repository root)
+corpus/
+crytic-export/
+slither_results.json
+/config.json
+smoke.log
+
+# Local tool and environment data
+.codex/
+.env
+.env.*
+!.env.example
