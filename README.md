@@ -99,6 +99,18 @@ uses zero balances.
 The `runner` package is a public importable API:
 `import "github.com/mysteryon88/medusa-go-api/runner"`.
 
+## License
+
+Unless otherwise stated, this project's original code and documentation are licensed
+under the [GNU Affero General Public License v3.0](LICENSE) (`AGPL-3.0-only`).
+
+Solidity example files marked `SPDX-License-Identifier: MIT` are licensed under MIT.
+
+Third-party code, dependencies, and submodules retain their own licenses. In particular:
+
+- [Medusa v1.5.1](https://github.com/crytic/medusa/blob/v1.5.1/LICENSE) is licensed under AGPLv3.
+- [crytic/properties v1.1.0](https://github.com/crytic/properties/blob/v1.1.0/LICENSE) is licensed under AGPLv3; its nested dependencies retain their respective licenses.
+
 ## Links
 
 - [Medusa](https://github.com/crytic/medusa) · [crytic/properties](https://github.com/crytic/properties)
